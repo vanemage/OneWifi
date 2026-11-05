@@ -43,10 +43,10 @@
 #if defined(CONFIG_IEEE80211BE) && !defined(CONFIG_GENERIC_MLO)
 #define MLO_RFC_NOTIFY_PARAM_COUNT 2
 typedef struct mlo_rfc_status_params {
-    bool last_mlo_rfc_enable;
-    bool last_mlo_rfc_enable_notify_status_pending;
-    bool param_notify_status[MLO_RFC_NOTIFY_PARAM_COUNT];
-    int last_mlo_rfc_notify_task_id;
+   bool last_mlo_rfc_enable;
+   bool last_mlo_rfc_enable_notify_status_pending;
+   bool param_notify_status[MLO_RFC_NOTIFY_PARAM_COUNT];
+   int last_mlo_rfc_notify_task_id;
 } mlo_rfc_status_params_t;
 
 #endif
